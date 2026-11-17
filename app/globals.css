@@ -160,3 +160,31 @@ html.js-ready [data-reveal].is-visible{opacity:1;transform:none}
   *,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
   html.js-ready [data-reveal]{opacity:1!important;transform:none!important}
 }
+
+/* Clearer editorial rhythm for long-form copy and project cards. */
+.section{padding-block:clamp(88px,9vw,132px)}
+.section-label{margin-bottom:clamp(34px,4vw,54px)}
+.project-grid{gap:clamp(18px,2.4vw,34px)}
+.project-card{min-height:430px;padding:clamp(24px,3vw,40px);gap:18px}
+.project-tagline{max-width:30ch;font-size:clamp(18px,1.65vw,22px);line-height:1.42}
+.project-description{max-width:52ch;font-size:15px;line-height:1.8}
+.project-stats{gap:clamp(20px,3vw,36px)}
+.timeline li{min-height:240px;display:flex;flex-direction:column}
+.timeline li p:last-child{max-width:48ch}
+.about-grid{grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:clamp(40px,7vw,112px);align-items:start}
+.about-copy{max-width:650px;font-size:clamp(30px,3.4vw,48px);line-height:1.18}
+.about-more{max-width:520px;padding:4px 0 4px clamp(22px,2.8vw,38px);border-left:1px solid var(--line-strong)}
+.about-more p{max-width:48ch;font-size:17px;line-height:1.8}
+.about-more .interests{margin-top:28px}
+.contact h2{max-width:780px}
+
+@media(max-width:760px){
+  .section{padding-block:78px}
+  .project-card{min-height:0;padding:24px 22px}
+  .project-tagline{max-width:32ch;font-size:19px}
+  .timeline li{min-height:0}
+  .about-grid{grid-template-columns:1fr;gap:26px}
+  .about-copy{max-width:20ch;font-size:clamp(30px,8vw,40px)}
+  .about-more{max-width:640px;padding:22px 0 0;border-left:0;border-top:1px solid var(--line-strong)}
+  .about-more p{font-size:16px}
+}
