@@ -1,5 +1,5 @@
-// Static export for GitHub Pages. The Pages workflow sets PAGES_BASE_PATH
-// (empty for a <user>.github.io repository, "/<repo>" otherwise).
+// Static export for GitHub Pages. PAGES_BASE_PATH is only needed if the site
+// ever moves to a project repository ("/<repo>"); the user site needs none.
 const basePath = process.env.PAGES_BASE_PATH ?? '';
 
 /** @type {import('next').NextConfig} */

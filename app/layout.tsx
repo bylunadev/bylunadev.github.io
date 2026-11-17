@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-// Link previews resolve against the published address (set by the Pages workflow).
+// Link previews resolve against the published address (set by scripts/deploy.sh).
 const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
 
 const description = 'Estudante de Medicina em Buenos Aires e desenvolvedora. Criadora e fundadora do MEDLAB e da REPLAB.';

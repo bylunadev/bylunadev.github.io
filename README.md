@@ -11,5 +11,9 @@ npm run dev
 
 ## Publicação
 
-Cada `git push` na branch `main` publica o site no GitHub Pages automaticamente
-(veja `.github/workflows/pages.yml`).
+```sh
+npm run deploy
+```
+
+Gera o site e envia para a branch `gh-pages`, que o GitHub Pages publica em
+https://luanacbmenezes-lab.github.io
