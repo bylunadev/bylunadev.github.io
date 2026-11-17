@@ -25,9 +25,10 @@ const copy = {
     intro: 'Sou estudante de Medicina e desenvolvedora de software. Criei o MEDLAB, com 75 aulas e 1.700 flashcards para o estudo médico, e fundei a REPLAB, que desenvolve assistentes de IA, automações e integrações para negócios.',
     projectsButton: 'Ver projetos',
     aboutButton: 'Conversar sobre um projeto',
-    proof: [['2', 'projetos publicados'], ['75', 'aulas no MEDLAB'], ['1.700', 'flashcards no MEDLAB']] as [string, string][],
+    proof: [['3', 'projetos publicados'], ['75', 'aulas no MEDLAB'], ['1.700', 'flashcards no MEDLAB']] as [string, string][],
     projects: 'PROJETOS',
     visit: 'Visitar site',
+    clinicPhotoAlt: 'Foto da fisioterapeuta da Clínica Catarina Catunda; abrir o site',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Criadora e fundadora',
@@ -42,13 +43,6 @@ const copy = {
         description: 'A REPLAB desenvolve assistentes de IA para WhatsApp, automações e integrações sob medida para clínicas, comércios e equipes de logística. Cada solução atende a tarefas específicas da operação.',
         stats: [['4', 'linhas de produto'], ['AR · BR', 'atuação']],
         tags: ['Agentes de IA', 'Automação', 'Integrações'],
-      },
-      {
-        name: 'CATARINA CATUNDA', url: 'https://clinicacatarinacatunda.floot.app/', host: 'Demonstração online', role: 'Site institucional',
-        tagline: 'Site institucional para uma clínica de fisioterapia em Piedade.',
-        description: 'Apresenta a fisioterapeuta e suas seis especialidades, mostra o espaço da clínica e reúne avaliações de pacientes. Inclui contato por WhatsApp para agendamento e orientações para chegar.',
-        stats: [['6', 'especialidades']],
-        tags: ['Fisioterapia', 'Site institucional', 'WhatsApp'],
       },
     ] as Project[],
     path: 'TRAJETÓRIA',
@@ -76,9 +70,10 @@ const copy = {
     intro: 'Estudio Medicina y desarrollo software para abordar problemas que no se resuelven con una fórmula prefabricada. Combino investigación cuidadosa e ingeniería para convertir necesidades reales en productos digitales.',
     projectsButton: 'Ver proyectos',
     aboutButton: 'Conversemos sobre una idea',
-    proof: [['2', 'proyectos publicados'], ['75', 'clases de Medicina'], ['1.700', 'flashcards de repaso']] as [string, string][],
+    proof: [['3', 'proyectos publicados'], ['75', 'clases de Medicina'], ['1.700', 'flashcards de repaso']] as [string, string][],
     projects: 'PROYECTOS ONLINE',
     visit: 'Visitar sitio',
+    clinicPhotoAlt: 'Foto de la fisioterapeuta de Clínica Catarina Catunda; abrir el sitio',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creadora y fundadora',
@@ -93,13 +88,6 @@ const copy = {
         description: 'REPLAB desarrolla asistentes de IA para WhatsApp, automatizaciones e integraciones a medida para clínicas, comercios y equipos de logística. El trabajo empieza por entender la operación y detectar dónde la tecnología puede reducir fricciones.',
         stats: [['4', 'líneas de producto'], ['AR · BR', 'presencia']],
         tags: ['Agentes de IA', 'Automatización', 'Integraciones'],
-      },
-      {
-        name: 'CATARINA CATUNDA', url: 'https://clinicacatarinacatunda.floot.app/', host: 'Demo online', role: 'Sitio institucional',
-        tagline: 'Sitio institucional para una clínica de fisioterapia en Piedade.',
-        description: 'Presenta a la fisioterapeuta y sus seis especialidades, muestra el espacio de atención y reúne reseñas de pacientes. Incluye contacto por WhatsApp para solicitar turnos e indicaciones para llegar.',
-        stats: [['6', 'especialidades']],
-        tags: ['Fisioterapia', 'Sitio institucional', 'WhatsApp'],
       },
     ] as Project[],
     path: 'TRAYECTORIA',
@@ -127,9 +115,10 @@ const copy = {
     intro: 'I study medicine and build software to address problems that need more than an off-the-shelf answer. I bring careful inquiry and engineering together to turn real needs into digital products.',
     projectsButton: 'View projects',
     aboutButton: 'Discuss an idea',
-    proof: [['2', 'published projects'], ['75', 'medical lessons'], ['1,700', 'review flashcards']] as [string, string][],
+    proof: [['3', 'published projects'], ['75', 'medical lessons'], ['1,700', 'review flashcards']] as [string, string][],
     projects: 'LIVE PROJECTS',
     visit: 'Visit site',
+    clinicPhotoAlt: 'Photo of the physiotherapist at Catarina Catunda Clinic; open website',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creator & founder',
@@ -144,13 +133,6 @@ const copy = {
         description: 'REPLAB builds WhatsApp AI assistants, automations and custom integrations for clinics, shops and logistics teams. The work starts by understanding the operation and where technology can reduce friction.',
         stats: [['4', 'product lines'], ['AR · BR', 'markets']],
         tags: ['AI agents', 'Automation', 'Integrations'],
-      },
-      {
-        name: 'CATARINA CATUNDA', url: 'https://clinicacatarinacatunda.floot.app/', host: 'Live demo', role: 'Institutional website',
-        tagline: 'An institutional website for a physiotherapy clinic in Piedade.',
-        description: 'Introduces the physiotherapist and her six specialties, shows the clinic space and presents patient reviews. It includes WhatsApp appointment requests and directions to the clinic.',
-        stats: [['6', 'specialties']],
-        tags: ['Physiotherapy', 'Website', 'WhatsApp'],
       },
     ] as Project[],
     path: 'JOURNEY',
@@ -177,6 +159,8 @@ type Language = keyof typeof copy;
 const languages = ['pt', 'es', 'en'] as const;
 const htmlLang: Record<Language, string> = { pt: 'pt-BR', es: 'es-AR', en: 'en' };
 const sectionIds = ['home', 'projects', 'journey', 'about', 'contact'];
+const clinicSiteUrl = 'https://clinicacatarinacatunda.floot.app/';
+const clinicPhotoUrl = 'https://clinicacatarinacatunda.floot.app/_cdn/static/4e5d421a-3679-4034-a83a-f3fd53753b65-WhatsApp-Image-2026-08-29-at-20.52.28.jpeg';
 
 function readStored(key: string) {
   try { return window.localStorage.getItem(key); } catch { return null; }
@@ -283,6 +267,9 @@ export default function Home() {
           <dl className="project-stats">{p.stats.map(([value, label]) => <div key={label}><dt>{value}</dt><dd>{label}</dd></div>)}</dl>
           <div className="project-bottom"><ul className="tags">{p.tags.map(tag => <li key={tag}>{tag}</li>)}</ul><span className="visit">{t.visit} →</span></div>
         </a>)}
+        <a className="project-photo-card" href={clinicSiteUrl} target="_blank" rel="noreferrer" aria-label={t.clinicPhotoAlt} title={t.clinicPhotoAlt} data-reveal data-reveal-delay="2">
+          <Image src={clinicPhotoUrl} alt={t.clinicPhotoAlt} fill sizes="(max-width: 760px) 88vw, 40vw" unoptimized />
+        </a>
       </div>
     </section>
 
