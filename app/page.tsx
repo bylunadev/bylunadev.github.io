@@ -43,6 +43,13 @@ const copy = {
         stats: [['4', 'linhas de produto'], ['AR · BR', 'atuação']],
         tags: ['Agentes de IA', 'Automação', 'Integrações'],
       },
+      {
+        name: 'CATARINA CATUNDA', url: 'https://clinicacatarinacatunda.floot.app/', host: 'Demonstração online', role: 'Site institucional',
+        tagline: 'Site institucional para uma clínica de fisioterapia em Piedade.',
+        description: 'Apresenta a fisioterapeuta e suas seis especialidades, mostra o espaço da clínica e reúne avaliações de pacientes. Inclui contato por WhatsApp para agendamento e orientações para chegar.',
+        stats: [['6', 'especialidades']],
+        tags: ['Fisioterapia', 'Site institucional', 'WhatsApp'],
+      },
     ] as Project[],
     path: 'TRAJETÓRIA',
     steps: [
@@ -87,6 +94,13 @@ const copy = {
         stats: [['4', 'líneas de producto'], ['AR · BR', 'presencia']],
         tags: ['Agentes de IA', 'Automatización', 'Integraciones'],
       },
+      {
+        name: 'CATARINA CATUNDA', url: 'https://clinicacatarinacatunda.floot.app/', host: 'Demo online', role: 'Sitio institucional',
+        tagline: 'Sitio institucional para una clínica de fisioterapia en Piedade.',
+        description: 'Presenta a la fisioterapeuta y sus seis especialidades, muestra el espacio de atención y reúne reseñas de pacientes. Incluye contacto por WhatsApp para solicitar turnos e indicaciones para llegar.',
+        stats: [['6', 'especialidades']],
+        tags: ['Fisioterapia', 'Sitio institucional', 'WhatsApp'],
+      },
     ] as Project[],
     path: 'TRAYECTORIA',
     steps: [
@@ -130,6 +144,13 @@ const copy = {
         description: 'REPLAB builds WhatsApp AI assistants, automations and custom integrations for clinics, shops and logistics teams. The work starts by understanding the operation and where technology can reduce friction.',
         stats: [['4', 'product lines'], ['AR · BR', 'markets']],
         tags: ['AI agents', 'Automation', 'Integrations'],
+      },
+      {
+        name: 'CATARINA CATUNDA', url: 'https://clinicacatarinacatunda.floot.app/', host: 'Live demo', role: 'Institutional website',
+        tagline: 'An institutional website for a physiotherapy clinic in Piedade.',
+        description: 'Introduces the physiotherapist and her six specialties, shows the clinic space and presents patient reviews. It includes WhatsApp appointment requests and directions to the clinic.',
+        stats: [['6', 'specialties']],
+        tags: ['Physiotherapy', 'Website', 'WhatsApp'],
       },
     ] as Project[],
     path: 'JOURNEY',
