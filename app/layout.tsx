@@ -4,7 +4,7 @@ import './globals.css';
 // Link previews resolve against the published address (set by scripts/deploy.sh).
 const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
 
-const description = 'Estudante de Medicina em Buenos Aires e desenvolvedora. Criadora e fundadora do MEDLAB e da REPLAB.';
+const description = 'Estudante de Medicina e desenvolvedora de software. Crio integrações, automações e produtos digitais para educação e operações, incluindo projetos em contextos de saúde.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`),

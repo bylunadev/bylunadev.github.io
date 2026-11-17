@@ -28,8 +28,9 @@ const copy = {
     proof: [['3', 'projetos publicados'], ['75', 'aulas no MEDLAB'], ['1.700', 'flashcards no MEDLAB']] as [string, string][],
     projects: 'PROJETOS',
     visit: 'Visitar site',
-    clinicPhotoAlt: 'Retrato da fisioterapeuta da Clínica Catarina Catunda',
-    clinicLinkLabel: 'Site da clínica · abrir projeto',
+    clinicPhotoAlt: 'Ana Catarina Catunda no espaço de atendimento da clínica, apresentado no projeto de site que desenvolvi',
+    clinicName: 'Clínica Catarina Catunda',
+    clinicLinkLabel: 'Site institucional · concepção e desenvolvimento',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Criadora e fundadora',
@@ -56,8 +57,8 @@ const copy = {
     aboutMore: 'O MEDLAB reúne 75 aulas e 1.700 flashcards com repetição espaçada. Com a Luna, estudantes praticam respostas orais e recebem perguntas de aprofundamento. Na REPLAB, desenvolvo assistentes de IA para WhatsApp, automações e integrações para clínicas, comércios e equipes de logística. Também me interesso por neurocirurgia, geriatria e qualidade de vida.',
     interests: ['Neurocirurgia', 'Geriatria', 'Qualidade de vida', 'IA', 'Desenvolvimento web'],
     contact: 'CONTATO',
-    contactText: 'Há um processo na saúde ou no seu negócio que poderia funcionar melhor com tecnologia?',
-    contactSub: 'Vamos conversar sobre projetos, pesquisa ou parcerias em saúde e tecnologia.',
+    contactText: 'Seus sistemas não conversam ou há tarefas que poderiam ser mais simples?',
+    contactSub: 'Vamos conversar sobre integrações, automações e produtos digitais para necessidades reais, inclusive em negócios de saúde.',
     whatsapp: 'Falar pelo WhatsApp',
     code: ['const portfolio = {', '  domains: ["health",', '    "software"],', '  focus: "people"', '}'],
     terminal: ['build()', 'test()', 'deploy()'],
@@ -74,14 +75,15 @@ const copy = {
     proof: [['3', 'proyectos publicados'], ['75', 'clases de Medicina'], ['1.700', 'flashcards de repaso']] as [string, string][],
     projects: 'PROYECTOS ONLINE',
     visit: 'Visitar sitio',
-    clinicPhotoAlt: 'Retrato de la fisioterapeuta de Clínica Catarina Catunda',
-    clinicLinkLabel: 'Sitio de la clínica · ver proyecto',
+    clinicPhotoAlt: 'Ana Catarina Catunda en el espacio de atención de la clínica, mostrado en el sitio que desarrollé',
+    clinicName: 'Clínica Catarina Catunda',
+    clinicLinkLabel: 'Sitio institucional · diseño y desarrollo',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creadora y fundadora',
         tagline: 'Un espacio de estudio médico que convierte contenidos en práctica de recuperación.',
         description: 'MEDLAB reúne clases y flashcards con repetición espaciada. Con Luna, los estudiantes pueden practicar respuestas orales, recibir preguntas de profundización e identificar temas que necesitan repaso.',
-        stats: [['75', 'aulas'], ['1.700', 'flashcards'], ['3', 'materias']],
+        stats: [['75', 'clases'], ['1.700', 'flashcards'], ['3', 'materias']],
         tags: ['IA', 'Educación médica', 'Producto digital'],
       },
       {
@@ -95,15 +97,15 @@ const copy = {
     path: 'TRAYECTORIA',
     steps: [
       { tag: 'MEDICINA', title: 'Fundación H. A. Barceló', place: 'Buenos Aires, Argentina', text: 'Carrera de Medicina, con especial interés en la neurocirugía y la geriatría.' },
-      { tag: 'DESARROLLO WEB', title: 'The Odin Project', place: 'Online · Open source', text: 'Formación práctica en desarrollo web, aprendiendo a construir proyectos reales desde cero.' },
+      { tag: 'DESARROLLO WEB', title: 'The Odin Project', place: 'En línea · Código abierto', text: 'Formación práctica en desarrollo web, aprendiendo a construir proyectos reales desde cero.' },
     ] as Step[],
     about: 'SOBRE MÍ',
     aboutText: 'Soy Luana. En Medicina, estudio sistemas complejos desde el cuerpo y la experiencia de cada persona. En ingeniería, construyo herramientas con la misma pregunta: qué problema resuelven, para quién y en qué condiciones.',
     aboutMore: 'Me interesan la neurocirugía, la geriatría y la calidad de vida. En tecnología, mi foco es comprender el contexto antes de proponer una herramienta, ya sea para apoyar el estudio médico o para hacer más claros y consistentes los procesos de trabajo. Busco crear soluciones útiles, con objetivos y límites bien definidos.',
     interests: ['Neurocirugía', 'Geriatría', 'Calidad de vida', 'IA', 'Desarrollo web'],
     contact: 'CONTACTO',
-    contactText: '¿Qué desafío te gustaría volver más claro, accesible o eficiente con tecnología?',
-    contactSub: 'Estoy abierta a conversar sobre producto, investigación y alianzas en salud y tecnología.',
+    contactText: '¿Tus sistemas no se conectan o hay tareas que podrían ser más simples?',
+    contactSub: 'Conversemos sobre integraciones, automatizaciones y productos digitales para necesidades reales, también en organizaciones de salud.',
     whatsapp: 'Escribime por WhatsApp',
     code: ['const portfolio = {', '  domains: ["health",', '    "software"],', '  focus: "people"', '}'],
     terminal: ['build()', 'test()', 'deploy()'],
@@ -120,8 +122,9 @@ const copy = {
     proof: [['3', 'published projects'], ['75', 'medical lessons'], ['1,700', 'review flashcards']] as [string, string][],
     projects: 'LIVE PROJECTS',
     visit: 'Visit site',
-    clinicPhotoAlt: 'Portrait of the physiotherapist at Catarina Catunda Clinic',
-    clinicLinkLabel: 'Clinic website · view project',
+    clinicPhotoAlt: 'Ana Catarina Catunda in the clinic space, featured in the website I designed and built',
+    clinicName: 'Catarina Catunda Clinic',
+    clinicLinkLabel: 'Clinic website · design and development',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creator & founder',
@@ -148,8 +151,8 @@ const copy = {
     aboutMore: 'My interests include neurosurgery, geriatrics and quality of life. In technology, I try to understand the context before proposing a tool, whether it supports medical learning or makes work processes clearer and more consistent. I aim to build useful solutions with well-defined goals and limits.',
     interests: ['Neurosurgery', 'Geriatrics', 'Quality of life', 'AI', 'Web development'],
     contact: 'CONTACT',
-    contactText: 'What challenge would you like to make clearer, more accessible or more efficient with technology?',
-    contactSub: 'I’m open to conversations about products, research and partnerships in health and technology.',
+    contactText: 'Do your systems fail to connect, or are there tasks that could be simpler?',
+    contactSub: 'Let’s discuss integrations, automation and digital products for real needs, including within healthcare organizations.',
     whatsapp: 'Chat on WhatsApp',
     code: ['const portfolio = {', '  domains: ["health",', '    "software"],', '  focus: "people"', '}'],
     terminal: ['build()', 'test()', 'deploy()'],
@@ -270,9 +273,9 @@ export default function Home() {
           <dl className="project-stats">{p.stats.map(([value, label]) => <div key={label}><dt>{value}</dt><dd>{label}</dd></div>)}</dl>
           <div className="project-bottom"><ul className="tags">{p.tags.map(tag => <li key={tag}>{tag}</li>)}</ul><span className="visit">{t.visit} →</span></div>
         </a>)}
-        <a className="project-photo-card" href={clinicSiteUrl} target="_blank" rel="noreferrer" aria-label={t.clinicLinkLabel} data-reveal data-reveal-delay="2">
+        <a className="project-photo-card" href={clinicSiteUrl} target="_blank" rel="noreferrer" aria-label={`${t.clinicName} — ${t.clinicLinkLabel}`} data-reveal data-reveal-delay="2">
           <Image src={clinicPhotoUrl} alt={t.clinicPhotoAlt} fill sizes="(max-width: 760px) 88vw, 40vw" unoptimized />
-          <span>{t.clinicLinkLabel} <b aria-hidden="true">↗</b></span>
+          <span><span><strong>{t.clinicName}</strong><small>{t.clinicLinkLabel}</small></span><b aria-hidden="true">↗</b></span>
         </a>
       </div>
     </section>
