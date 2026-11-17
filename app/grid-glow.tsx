@@ -6,7 +6,7 @@ import { useEffect, useRef } from 'react';
 const CELL = 40;
 const MAX_ALPHA = 0.16;
 const FADE_PER_FRAME = 0.018;
-const COLOR = '217, 84, 30'; // --brand
+const COLOR = '242, 87, 10'; // --brand
 
 /**
  * Soft orange trail on the background grid: the square under the pointer lights up

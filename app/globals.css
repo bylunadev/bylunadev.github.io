@@ -3,7 +3,7 @@
 /* ---------- Tokens: editorial, clean, with a quiet grid ---------- */
 :root{
   --paper:#fbfaf8;--ink:#0f0f0f;--muted:#66616a;--soft:#f3f0ef;
-  --brand:#d9541e;--brand-soft:#f6e8df;
+  --brand:#f2570a;--brand-soft:#fde5d6;
   --line:#1412161f;--line-strong:#14121640;--grid:#1412160a;
   --display:'Manrope',system-ui,sans-serif;--mono:'DM Mono',ui-monospace,monospace;
 }
