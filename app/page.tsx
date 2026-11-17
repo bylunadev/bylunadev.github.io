@@ -29,6 +29,7 @@ const copy = {
     projects: 'PROJETOS',
     visit: 'Visitar site',
     clinicPhotoAlt: 'Retrato da fisioterapeuta da Clínica Catarina Catunda',
+    clinicLinkLabel: 'Site da clínica · abrir projeto',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Criadora e fundadora',
@@ -74,6 +75,7 @@ const copy = {
     projects: 'PROYECTOS ONLINE',
     visit: 'Visitar sitio',
     clinicPhotoAlt: 'Retrato de la fisioterapeuta de Clínica Catarina Catunda',
+    clinicLinkLabel: 'Sitio de la clínica · ver proyecto',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creadora y fundadora',
@@ -119,6 +121,7 @@ const copy = {
     projects: 'LIVE PROJECTS',
     visit: 'Visit site',
     clinicPhotoAlt: 'Portrait of the physiotherapist at Catarina Catunda Clinic',
+    clinicLinkLabel: 'Clinic website · view project',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creator & founder',
@@ -160,6 +163,7 @@ const languages = ['pt', 'es', 'en'] as const;
 const htmlLang: Record<Language, string> = { pt: 'pt-BR', es: 'es-AR', en: 'en' };
 const sectionIds = ['home', 'projects', 'journey', 'about', 'contact'];
 const clinicPhotoUrl = 'https://clinicacatarinacatunda.floot.app/_cdn/static/4e5d421a-3679-4034-a83a-f3fd53753b65-WhatsApp-Image-2026-08-29-at-20.52.28.jpeg';
+const clinicSiteUrl = 'https://catarinacatundafisioterapia.vercel.app';
 
 function readStored(key: string) {
   try { return window.localStorage.getItem(key); } catch { return null; }
@@ -266,9 +270,10 @@ export default function Home() {
           <dl className="project-stats">{p.stats.map(([value, label]) => <div key={label}><dt>{value}</dt><dd>{label}</dd></div>)}</dl>
           <div className="project-bottom"><ul className="tags">{p.tags.map(tag => <li key={tag}>{tag}</li>)}</ul><span className="visit">{t.visit} →</span></div>
         </a>)}
-        <figure className="project-photo-card" data-reveal data-reveal-delay="2">
+        <a className="project-photo-card" href={clinicSiteUrl} target="_blank" rel="noreferrer" aria-label={t.clinicLinkLabel} data-reveal data-reveal-delay="2">
           <Image src={clinicPhotoUrl} alt={t.clinicPhotoAlt} fill sizes="(max-width: 760px) 88vw, 40vw" unoptimized />
-        </figure>
+          <span>{t.clinicLinkLabel} <b aria-hidden="true">↗</b></span>
+        </a>
       </div>
     </section>
 
