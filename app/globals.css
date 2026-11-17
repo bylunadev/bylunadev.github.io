@@ -189,9 +189,6 @@ html.js-ready [data-reveal].is-visible{opacity:1;transform:none}
   .about-more p{font-size:16px}
 }
 
-.project-photo-card{position:relative;display:block;aspect-ratio:1 / 1;min-height:0;overflow:hidden;border:1px solid var(--line-strong);background:var(--soft);text-decoration:none}
+.project-photo-card{position:relative;display:block;aspect-ratio:1 / 1;min-height:0;margin:0;overflow:hidden;border:1px solid var(--line-strong);background:var(--soft)}
 .project-photo-card img{object-fit:cover;object-position:center 36%;transition:transform .45s ease}
-.project-photo-card:hover{border-color:var(--ink)}
-.project-photo-card:hover img{transform:scale(1.025)}
-.project-photo-card:focus-visible{outline:2px solid var(--brand);outline-offset:4px}
 @media(max-width:760px){.project-photo-card{aspect-ratio:1.08 / 1}}

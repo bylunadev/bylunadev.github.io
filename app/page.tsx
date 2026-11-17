@@ -28,7 +28,7 @@ const copy = {
     proof: [['3', 'projetos publicados'], ['75', 'aulas no MEDLAB'], ['1.700', 'flashcards no MEDLAB']] as [string, string][],
     projects: 'PROJETOS',
     visit: 'Visitar site',
-    clinicPhotoAlt: 'Foto da fisioterapeuta da Clínica Catarina Catunda; abrir o site',
+    clinicPhotoAlt: 'Retrato da fisioterapeuta da Clínica Catarina Catunda',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Criadora e fundadora',
@@ -73,7 +73,7 @@ const copy = {
     proof: [['3', 'proyectos publicados'], ['75', 'clases de Medicina'], ['1.700', 'flashcards de repaso']] as [string, string][],
     projects: 'PROYECTOS ONLINE',
     visit: 'Visitar sitio',
-    clinicPhotoAlt: 'Foto de la fisioterapeuta de Clínica Catarina Catunda; abrir el sitio',
+    clinicPhotoAlt: 'Retrato de la fisioterapeuta de Clínica Catarina Catunda',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creadora y fundadora',
@@ -118,7 +118,7 @@ const copy = {
     proof: [['3', 'published projects'], ['75', 'medical lessons'], ['1,700', 'review flashcards']] as [string, string][],
     projects: 'LIVE PROJECTS',
     visit: 'Visit site',
-    clinicPhotoAlt: 'Photo of the physiotherapist at Catarina Catunda Clinic; open website',
+    clinicPhotoAlt: 'Portrait of the physiotherapist at Catarina Catunda Clinic',
     projectList: [
       {
         name: 'MEDLAB', url: 'https://medlab.com.ar', host: 'medlab.com.ar', role: 'Creator & founder',
@@ -159,7 +159,6 @@ type Language = keyof typeof copy;
 const languages = ['pt', 'es', 'en'] as const;
 const htmlLang: Record<Language, string> = { pt: 'pt-BR', es: 'es-AR', en: 'en' };
 const sectionIds = ['home', 'projects', 'journey', 'about', 'contact'];
-const clinicSiteUrl = 'https://clinicacatarinacatunda.floot.app/';
 const clinicPhotoUrl = 'https://clinicacatarinacatunda.floot.app/_cdn/static/4e5d421a-3679-4034-a83a-f3fd53753b65-WhatsApp-Image-2026-08-29-at-20.52.28.jpeg';
 
 function readStored(key: string) {
@@ -267,9 +266,9 @@ export default function Home() {
           <dl className="project-stats">{p.stats.map(([value, label]) => <div key={label}><dt>{value}</dt><dd>{label}</dd></div>)}</dl>
           <div className="project-bottom"><ul className="tags">{p.tags.map(tag => <li key={tag}>{tag}</li>)}</ul><span className="visit">{t.visit} →</span></div>
         </a>)}
-        <a className="project-photo-card" href={clinicSiteUrl} target="_blank" rel="noreferrer" aria-label={t.clinicPhotoAlt} title={t.clinicPhotoAlt} data-reveal data-reveal-delay="2">
+        <figure className="project-photo-card" data-reveal data-reveal-delay="2">
           <Image src={clinicPhotoUrl} alt={t.clinicPhotoAlt} fill sizes="(max-width: 760px) 88vw, 40vw" unoptimized />
-        </a>
+        </figure>
       </div>
     </section>
 
