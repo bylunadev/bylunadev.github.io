@@ -5,7 +5,7 @@ export const links = {
   whatsapp: 'https://wa.me/5491173692773',
   github: 'https://github.com/luanacbmenezes-lab',
   /** Leave empty until there is a public profile: the link is hidden while empty. */
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/in/luana-catunda-bezerra-de-menezes-aa0165447/',
 };
 
 export const sectionIds = ['about', 'method', 'skills', 'work', 'experience', 'contact'] as const;
