@@ -3,11 +3,10 @@ import { links } from './content/site';
 import { LanguageProvider } from './i18n';
 import './globals.css';
 
-// Link previews and canonical URLs resolve against the published address (set by scripts/deploy.sh).
 const siteUrl = process.env.SITE_URL ?? 'http://localhost:3000';
 const base = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`;
 
-const title = 'Luana Menezes — Product Builder · Software · AI';
+const title = 'Luana Menezes | Product Builder · Software · AI';
 const description = 'Desenvolvo produtos digitais e sistemas inteligentes, conectando tecnologia, conhecimento e necessidades reais. Criadora do MEDLAB e da REPLAB. Buenos Aires, Argentina.';
 
 export const metadata: Metadata = {

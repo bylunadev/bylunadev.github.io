@@ -94,7 +94,6 @@ export default function Home() {
             <ul className="chips">{g.items.map(item => <li key={item}>{item}</li>)}</ul>
           </article>)}
         </div>
-        <p className="footnote" data-reveal>{t.skills.note}</p>
       </section>
 
       <section className="section work" id="work" aria-labelledby="work-title">

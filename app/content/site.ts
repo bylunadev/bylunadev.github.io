@@ -4,7 +4,6 @@ export const links = {
   email: 'luanamenezes10@icloud.com',
   whatsapp: 'https://wa.me/5491173692773',
   github: 'https://github.com/luanacbmenezes-lab',
-  /** Leave empty until there is a public profile: the link is hidden while empty. */
   linkedin: 'https://www.linkedin.com/in/luana-catunda-bezerra-de-menezes-aa0165447/',
 };
 
@@ -21,7 +20,7 @@ export type SiteCopy = {
   hero: { kicker: string; lead: string; text: string; location: string; work: string; contact: string; facts: Pair[] };
   about: { label: string; title: string; body: string[]; note: string };
   method: { label: string; title: string; intro: string; steps: { name: string; text: string }[] };
-  skills: { label: string; title: string; intro: string; groups: Skill[]; note: string };
+  skills: { label: string; title: string; intro: string; groups: Skill[] };
   work: { label: string; title: string; intro: string; read: string; visit: string };
   experience: { label: string; title: string; education: string; practice: string; entries: Entry[]; practiceEntries: Entry[] };
   contact: { label: string; title: string; text: string; whatsapp: string; email: string };
@@ -67,7 +66,7 @@ export const site: Record<Lang, SiteCopy> = {
       title: 'Um processo, do problema ao sistema em uso.',
       intro: 'O mesmo raciocínio de um caso clínico, aplicado a produto: primeiro entender, depois intervir, sempre verificar.',
       steps: [
-        { name: stepNames[0], text: 'Definir o problema real, para quem ele existe e em que condições. Sem isso, qualquer solução é palpite.' },
+        { name: stepNames[0], text: 'Definir o problema real, para quem ele existe e em que condições.' },
         { name: stepNames[1], text: 'Estudar o contexto: quem usa, o que já existe, que dados e restrições há. No MEDLAB, a bibliografia e o formato de cada exame oral.' },
         { name: stepNames[2], text: 'Modelar antes de programar: entidades, fluxos, fonte de verdade e a fronteira entre o que a IA sugere e o que o código garante.' },
         { name: stepNames[3], text: 'Construir em ciclos curtos, com tipos, testes e verificações automáticas desde o primeiro dia.' },
@@ -87,7 +86,6 @@ export const site: Record<Lang, SiteCopy> = {
         { title: skillNames[4], text: 'Interfaces claras, responsivas e acessíveis, com um sistema visual próprio para cada produto.', items: ux },
         { title: skillNames[5], text: 'Posicionamento, páginas de produto e funis que começam por entender o cliente.', items: ['Posicionamento', 'Landing pages', 'Diagnóstico como porta de entrada', 'Conteúdo para Instagram'] },
       ],
-      note: 'Em formação contínua, sem certificações declaradas.',
     },
     work: {
       label: 'PROJETOS SELECIONADOS',
@@ -106,8 +104,8 @@ export const site: Record<Lang, SiteCopy> = {
         { tag: 'ENGENHARIA DE SOFTWARE', title: 'Engenharia de Software', org: 'Autodidata · CS50 de Harvard (edX), The Odin Project e projetos próprios', period: 'Em andamento', status: 'em andamento', text: 'Formação autodidata em engenharia de software, seguindo a trilha de cursos CS50 de Harvard, online pelo edX, e o currículo do The Odin Project, aplicada na construção dos meus próprios produtos.' },
       ],
       practiceEntries: [
-        { tag: 'PRODUTO · IA', title: 'MEDLAB', org: 'Criadora e fundadora', period: '2026 — hoje', status: 'no ar', text: 'Concepção, design, desenvolvimento, conteúdo e operação da plataforma de treino para exames orais.' },
-        { tag: 'IA · AUTOMAÇÃO', title: 'REPLAB', org: 'Criadora e fundadora', period: '2026 — hoje', status: 'no ar', text: 'Assistente de WhatsApp com agenda, sistema de conteúdo para Instagram e diagnóstico online para negócios.' },
+        { tag: 'PRODUTO · IA', title: 'MEDLAB', org: 'Criadora e fundadora', period: '2026 – hoje', status: 'no ar', text: 'Concepção, design, desenvolvimento, conteúdo e operação da plataforma de treino para exames orais.' },
+        { tag: 'IA · AUTOMAÇÃO', title: 'REPLAB', org: 'Criadora e fundadora', period: '2026 – hoje', status: 'no ar', text: 'Assistente de WhatsApp com agenda, sistema de conteúdo para Instagram e diagnóstico online para negócios.' },
         { tag: 'WEB', title: 'Clínica Catarina Catunda', org: 'Projeto web', period: '2026', status: 'no ar', text: 'Concepção, design e desenvolvimento do site institucional da fisioterapeuta.' },
       ],
     },
@@ -150,7 +148,7 @@ export const site: Record<Lang, SiteCopy> = {
       title: 'Un proceso, del problema al sistema en uso.',
       intro: 'El mismo razonamiento de un caso clínico, aplicado a producto: primero entender, después intervenir, siempre verificar.',
       steps: [
-        { name: stepNames[0], text: 'Definir el problema real, para quién existe y en qué condiciones. Sin eso, cualquier solución es una suposición.' },
+        { name: stepNames[0], text: 'Definir el problema real, para quién existe y en qué condiciones.' },
         { name: stepNames[1], text: 'Estudiar el contexto: quién lo usa, qué existe, qué datos y restricciones hay. En MEDLAB, la bibliografía y el formato de cada examen oral.' },
         { name: stepNames[2], text: 'Modelar antes de programar: entidades, flujos, fuente de verdad y el límite entre lo que la IA sugiere y lo que el código garantiza.' },
         { name: stepNames[3], text: 'Construir en ciclos cortos, con tipos, tests y verificaciones automáticas desde el primer día.' },
@@ -170,7 +168,6 @@ export const site: Record<Lang, SiteCopy> = {
         { title: skillNames[4], text: 'Interfaces claras, responsivas y accesibles, con un sistema visual propio para cada producto.', items: ux },
         { title: skillNames[5], text: 'Posicionamiento, páginas de producto y embudos que empiezan por entender al cliente.', items: ['Posicionamiento', 'Landing pages', 'Diagnóstico como puerta de entrada', 'Contenido para Instagram'] },
       ],
-      note: 'En formación continua, sin certificaciones declaradas.',
     },
     work: {
       label: 'PROYECTOS SELECCIONADOS',
@@ -189,8 +186,8 @@ export const site: Record<Lang, SiteCopy> = {
         { tag: 'INGENIERÍA DE SOFTWARE', title: 'Ingeniería de Software', org: 'Autodidacta · CS50 de Harvard (edX), The Odin Project y proyectos propios', period: 'En curso', status: 'en curso', text: 'Formación autodidacta en ingeniería de software, siguiendo la serie de cursos CS50 de Harvard, en línea por edX, y el currículo de The Odin Project, aplicada en la construcción de mis propios productos.' },
       ],
       practiceEntries: [
-        { tag: 'PRODUCTO · IA', title: 'MEDLAB', org: 'Creadora y fundadora', period: '2026 — hoy', status: 'en línea', text: 'Concepción, diseño, desarrollo, contenido y operación de la plataforma de entrenamiento para exámenes orales.' },
-        { tag: 'IA · AUTOMATIZACIÓN', title: 'REPLAB', org: 'Creadora y fundadora', period: '2026 — hoy', status: 'en línea', text: 'Asistente de WhatsApp con agenda, sistema de contenido para Instagram y diagnóstico en línea para negocios.' },
+        { tag: 'PRODUCTO · IA', title: 'MEDLAB', org: 'Creadora y fundadora', period: '2026 – hoy', status: 'en línea', text: 'Concepción, diseño, desarrollo, contenido y operación de la plataforma de entrenamiento para exámenes orales.' },
+        { tag: 'IA · AUTOMATIZACIÓN', title: 'REPLAB', org: 'Creadora y fundadora', period: '2026 – hoy', status: 'en línea', text: 'Asistente de WhatsApp con agenda, sistema de contenido para Instagram y diagnóstico en línea para negocios.' },
         { tag: 'WEB', title: 'Clínica Catarina Catunda', org: 'Proyecto web', period: '2026', status: 'en línea', text: 'Concepción, diseño y desarrollo del sitio institucional de la fisioterapeuta.' },
       ],
     },
@@ -233,7 +230,7 @@ export const site: Record<Lang, SiteCopy> = {
       title: 'One process, from problem to system in use.',
       intro: 'The reasoning of a clinical case, applied to product: understand first, then intervene, and always verify.',
       steps: [
-        { name: stepNames[0], text: 'Define the real problem, who has it and under which conditions. Without that, any solution is a guess.' },
+        { name: stepNames[0], text: 'Define the real problem, who has it and under which conditions.' },
         { name: stepNames[1], text: 'Study the context: who uses it, what already exists, which data and constraints apply. For MEDLAB, the bibliography and the format of each oral exam.' },
         { name: stepNames[2], text: 'Model before coding: entities, flows, source of truth, and the line between what AI suggests and what code guarantees.' },
         { name: stepNames[3], text: 'Build in short cycles, with types, tests and automated checks from day one.' },
@@ -253,7 +250,6 @@ export const site: Record<Lang, SiteCopy> = {
         { title: skillNames[4], text: 'Clear, responsive and accessible interfaces, with a visual system of its own for each product.', items: ux },
         { title: skillNames[5], text: 'Positioning, product pages and funnels that start by understanding the customer.', items: ['Positioning', 'Landing pages', 'Diagnostic as entry point', 'Instagram content'] },
       ],
-      note: 'Continuously learning; no certifications claimed.',
     },
     work: {
       label: 'SELECTED WORK',
@@ -272,8 +268,8 @@ export const site: Record<Lang, SiteCopy> = {
         { tag: 'SOFTWARE ENGINEERING', title: 'Software Engineering', org: 'Self-taught · Harvard CS50 (edX), The Odin Project and my own projects', period: 'In progress', status: 'in progress', text: 'Self-taught software engineering, following Harvard’s CS50 course series online via edX and The Odin Project curriculum, applied to building my own products.' },
       ],
       practiceEntries: [
-        { tag: 'PRODUCT · AI', title: 'MEDLAB', org: 'Creator & founder', period: '2026 — present', status: 'live', text: 'Concept, design, development, content and operations of the oral-exam training platform.' },
-        { tag: 'AI · AUTOMATION', title: 'REPLAB', org: 'Creator & founder', period: '2026 — present', status: 'live', text: 'WhatsApp assistant with scheduling, an Instagram content system and an online diagnostic for businesses.' },
+        { tag: 'PRODUCT · AI', title: 'MEDLAB', org: 'Creator & founder', period: '2026 – present', status: 'live', text: 'Concept, design, development, content and operations of the oral-exam training platform.' },
+        { tag: 'AI · AUTOMATION', title: 'REPLAB', org: 'Creator & founder', period: '2026 – present', status: 'live', text: 'WhatsApp assistant with scheduling, an Instagram content system and an online diagnostic for businesses.' },
         { tag: 'WEB', title: 'Catarina Catunda Clinic', org: 'Web project', period: '2026', status: 'live', text: 'Concept, design and development of the physiotherapist’s website.' },
       ],
     },

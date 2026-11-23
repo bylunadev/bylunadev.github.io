@@ -1,11 +1,5 @@
 import type { Lang } from '../i18n';
 
-/**
- * Case studies. Every fact here was checked against the project's repository or live site
- * (see docs/AUDITORIA.md). Do not add metrics, users or features that cannot be verified.
- */
-
-/** One of the ten case-study sections, in the order of `caseStudy.labels`. */
 export type Section = { body?: string[]; list?: string[]; chips?: string[]; diagram?: string[][]; image?: number };
 
 type Localized = {
@@ -51,7 +45,7 @@ export const projects: Project[] = [
         category: 'Medical Education Platform',
         summary: 'Plataforma de treino para exames orais de Medicina: guias por aula, perguntas com respostas modelo, flashcards com repetição espaçada e simulação oral com IA.',
         role: 'Criadora e fundadora',
-        period: '2026 — hoje',
+        period: '2026 – hoje',
         status: 'No ar, com planos pagos e teste grátis',
         tags: ['Produto', 'IA aplicada', 'Educação médica'],
         imageAlts: [
@@ -94,7 +88,7 @@ export const projects: Project[] = [
           ], image: 3 },
           { body: [
             'Estado atual: no ar em medlab.com.ar, com planos pagos e teste grátis, em espanhol e português. Currículo UNLP com 113 aulas, 1.774 flashcards e 4 matérias; Fundación Barceló com 75 aulas, 1.700 flashcards e 3 matérias. O Final Integrador ainda está em preparação.',
-            'O que o projeto confirmou: separar conteúdo e código foi a decisão que mais poupou trabalho, e em temas sensíveis a IA só é útil quando seus limites são verificáveis.',
+            'Aprendizado: separar conteúdo e código foi a decisão que mais poupou trabalho. Em temas sensíveis, a IA precisa de limites que possam ser verificados.',
           ] },
         ],
       },
@@ -102,7 +96,7 @@ export const projects: Project[] = [
         category: 'Medical Education Platform',
         summary: 'Plataforma de entrenamiento para exámenes orales de Medicina: guías por clase, preguntas con respuestas modelo, flashcards con repaso espaciado y simulación oral con IA.',
         role: 'Creadora y fundadora',
-        period: '2026 — hoy',
+        period: '2026 – hoy',
         status: 'En línea, con planes pagos y prueba gratis',
         tags: ['Producto', 'IA aplicada', 'Educación médica'],
         imageAlts: [
@@ -145,7 +139,7 @@ export const projects: Project[] = [
           ], image: 3 },
           { body: [
             'Estado actual: en línea en medlab.com.ar, con planes pagos y prueba gratis, en español y portugués. Currículo UNLP con 113 clases, 1.774 flashcards y 4 materias; Fundación Barceló con 75 clases, 1.700 flashcards y 3 materias. El Final Integrador sigue en preparación.',
-            'Lo que confirmó el proyecto: separar contenido y código fue la decisión que más trabajo ahorró, y en temas sensibles la IA solo es útil cuando sus límites se pueden verificar.',
+            'Aprendizaje: separar contenido y código fue la decisión que más trabajo ahorró. En temas sensibles, la IA necesita límites que se puedan verificar.',
           ] },
         ],
       },
@@ -153,7 +147,7 @@ export const projects: Project[] = [
         category: 'Medical Education Platform',
         summary: 'A training platform for oral medical exams: lesson guides, questions with model answers, spaced-repetition flashcards and an AI oral-exam simulation.',
         role: 'Creator & founder',
-        period: '2026 — present',
+        period: '2026 – present',
         status: 'Live, with paid plans and a free trial',
         tags: ['Product', 'Applied AI', 'Medical education'],
         imageAlts: [
@@ -196,7 +190,7 @@ export const projects: Project[] = [
           ], image: 3 },
           { body: [
             'Current state: live at medlab.com.ar, with paid plans and a free trial, in Spanish and Portuguese. UNLP curriculum with 113 lessons, 1,774 flashcards and 4 subjects; Fundación Barceló with 75 lessons, 1,700 flashcards and 3 subjects. The Final Integrador exam is still in preparation.',
-            'What the project confirmed: separating content from code saved the most work, and in sensitive domains AI is only useful when its limits can be verified.',
+            'Takeaway: separating content from code saved the most work. In sensitive domains, AI needs limits that can be checked.',
           ] },
         ],
       },
@@ -218,7 +212,7 @@ export const projects: Project[] = [
         category: 'AI & Automation Systems',
         summary: 'Sistemas de IA e automação para negócios: assistente de WhatsApp que agenda, sistema de inteligência de conteúdo para Instagram e diagnóstico online de processos.',
         role: 'Criadora e fundadora',
-        period: '2026 — hoje',
+        period: '2026 – hoje',
         status: 'Site e diagnóstico no ar; sistemas em implantação',
         tags: ['Agentes de IA', 'Automação', 'Integrações'],
         imageAlts: [
@@ -234,7 +228,7 @@ export const projects: Project[] = [
             'Começar por um diagnóstico gratuito: 7 perguntas sobre a operação geram, na hora, um mapa do atendimento com as prioridades.',
             'Sob medida a partir de uma base comum: uma única base de código, uma configuração por cliente.',
             'Poucas implantações por mês, acompanhadas de perto pela fundadora.',
-            'Conteúdo diário que parte do guia de posicionamento de cada conta, e não de modelos genéricos.',
+            'Conteúdo diário que parte do guia de posicionamento de cada conta, e não de modelos prontos.',
           ], image: 1 },
           { body: [
             'Assistente de WhatsApp: a Meta envia a mensagem ao webhook, que confere a assinatura, identifica o cliente pelo número, junta o histórico, as regras fixas e a configuração dele e chama o Claude. A resposta volta pela Graph API. Tudo roda num Worker da Cloudflare com banco D1.',
@@ -255,11 +249,11 @@ export const projects: Project[] = [
           { list: [
             'Testes automatizados para as regras do assistente, para a agenda (incluindo tentativas simultâneas) e para o sigilo das referências de nicho.',
             'Ferramentas de linha de comando para criar clientes, trocar chaves, pausar o robô e gerar os links da agenda do dono.',
-            'Limitações escritas na documentação, sem esconder o que ainda falta.',
+            'Limitações registradas na documentação do projeto.',
           ] },
           { body: [
             'Estado atual: site e diagnóstico no ar em replab.com.ar, com uma demonstração em vídeo do assistente marcando e remarcando horários. O sistema de conteúdo está publicado, com geração pela API do Claude e métricas do Instagram funcionando; a pesquisa automática de nicho ainda usa dados de exemplo. O assistente de WhatsApp está pronto para implantação por cliente; a agenda por ferramentas foi testada com modelo simulado, e os lembretes automáticos dependem de um modelo de mensagem aprovado pela Meta.',
-            'O que o projeto confirmou: quando um sistema fala com os clientes de outra empresa, segurança e limites fazem parte do produto, não são um detalhe técnico.',
+            'Aprendizado: quando um sistema conversa com os clientes de outra empresa, segurança e limites precisam ser pensados desde o início do produto.',
           ] },
         ],
       },
@@ -267,7 +261,7 @@ export const projects: Project[] = [
         category: 'AI & Automation Systems',
         summary: 'Sistemas de IA y automatización para negocios: asistente de WhatsApp que agenda turnos, sistema de inteligencia de contenido para Instagram y diagnóstico en línea de procesos.',
         role: 'Creadora y fundadora',
-        period: '2026 — hoy',
+        period: '2026 – hoy',
         status: 'Sitio y diagnóstico en línea; sistemas en implementación',
         tags: ['Agentes de IA', 'Automatización', 'Integraciones'],
         imageAlts: [
@@ -304,11 +298,11 @@ export const projects: Project[] = [
           { list: [
             'Tests automatizados para las reglas del asistente, para la agenda (incluidos intentos simultáneos) y para la confidencialidad de las referencias de nicho.',
             'Herramientas de línea de comandos para crear clientes, cambiar claves, pausar el bot y generar los links de la agenda del dueño.',
-            'Limitaciones escritas en la documentación, sin ocultar lo que falta.',
+            'Limitaciones registradas en la documentación del proyecto.',
           ] },
           { body: [
             'Estado actual: sitio y diagnóstico en línea en replab.com.ar, con una demostración en video del asistente reservando y reprogramando turnos. El sistema de contenido está publicado, con generación por la API de Claude y métricas de Instagram funcionando; la búsqueda automática de nicho todavía usa datos de ejemplo. El asistente de WhatsApp está listo para implementarse por cliente; la agenda por herramientas se probó con un modelo simulado, y los recordatorios automáticos dependen de una plantilla de mensaje aprobada por Meta.',
-            'Lo que confirmó el proyecto: cuando un sistema habla con los clientes de otra empresa, la seguridad y los límites son parte del producto, no un detalle técnico.',
+            'Aprendizaje: cuando un sistema conversa con los clientes de otra empresa, la seguridad y los límites tienen que pensarse desde el inicio del producto.',
           ] },
         ],
       },
@@ -316,7 +310,7 @@ export const projects: Project[] = [
         category: 'AI & Automation Systems',
         summary: 'AI and automation systems for businesses: a WhatsApp assistant that books appointments, a content intelligence system for Instagram and an online process diagnostic.',
         role: 'Creator & founder',
-        period: '2026 — present',
+        period: '2026 – present',
         status: 'Website and diagnostic live; systems being rolled out',
         tags: ['AI agents', 'Automation', 'Integrations'],
         imageAlts: [
@@ -353,11 +347,11 @@ export const projects: Project[] = [
           { list: [
             'Automated tests for the assistant’s rules, for scheduling (including concurrent attempts) and for keeping niche references confidential.',
             'Command-line tools to create clients, rotate keys, pause the bot and generate the owner’s schedule links.',
-            'Limitations written into the documentation, without hiding what is missing.',
+            'Known limitations recorded in the project documentation.',
           ] },
           { body: [
             'Current state: website and diagnostic live at replab.com.ar, with a video demo of the assistant booking and rescheduling. The content system is published, with Claude-generated content and Instagram metrics working; automated niche research still uses sample data. The WhatsApp assistant is ready for per-client rollout; tool-based scheduling has been tested with a simulated model, and automatic reminders depend on a message template approved by Meta.',
-            'What the project confirmed: when a system talks to another company’s customers, security and limits are part of the product, not a technical detail.',
+            'Takeaway: when a system talks to another company’s customers, security and limits have to be designed in from the start.',
           ] },
         ],
       },
@@ -401,7 +395,7 @@ export const projects: Project[] = [
           { body: ['A estrutura da página partiu do que a pessoa precisa saber antes de marcar: quem atende, o que atende, onde e como falar. Cada seção responde a uma dessas perguntas.'] },
           { body: [
             'Estado atual: no ar em catarinacatundafisioterapia.vercel.app. Não há métricas de acesso publicadas.',
-            'O que o projeto confirmou: em saúde, clareza e responsabilidade no texto valem mais do que efeitos visuais.',
+            'Aprendizado: em saúde, um texto claro e responsável faz mais pela confiança do que efeitos visuais.',
           ] },
         ],
       },
@@ -434,7 +428,7 @@ export const projects: Project[] = [
           { body: ['La estructura partió de lo que una persona necesita saber antes de reservar: quién atiende, qué atiende, dónde y cómo contactarla. Cada sección responde a una de esas preguntas.'] },
           { body: [
             'Estado actual: en línea en catarinacatundafisioterapia.vercel.app. No hay métricas de visitas publicadas.',
-            'Lo que confirmó el proyecto: en salud, la claridad y la responsabilidad del texto valen más que los efectos visuales.',
+            'Aprendizaje: en salud, un texto claro y responsable genera más confianza que los efectos visuales.',
           ] },
         ],
       },
@@ -467,7 +461,7 @@ export const projects: Project[] = [
           { body: ['The page structure started from what someone needs to know before booking: who treats, what is treated, where, and how to get in touch. Each section answers one of those questions.'] },
           { body: [
             'Current state: live at catarinacatundafisioterapia.vercel.app. No traffic metrics are published.',
-            'What the project confirmed: in health, clear and responsible writing matters more than visual effects.',
+            'Takeaway: in health, clear and responsible writing builds more trust than visual effects.',
           ] },
         ],
       },

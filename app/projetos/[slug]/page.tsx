@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const p = getProject((await params).slug);
   if (!p) return {};
   const c = p.i18n.pt;
-  const title = `${p.name} · ${c.category} — Luana Menezes`;
+  const title = `${p.name} · ${c.category} | Luana Menezes`;
   return {
     title,
     description: c.summary,

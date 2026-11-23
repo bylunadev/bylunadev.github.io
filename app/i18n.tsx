@@ -17,12 +17,10 @@ function store(value: string) {
 }
 const isLang = (value: string | null): value is Lang => !!value && (languages as readonly string[]).includes(value);
 
-/** Language chosen by the visitor (saved), else the browser language, else Portuguese. */
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('pt');
 
   useEffect(() => {
-    // Runs once after hydration: browser-only preferences can't be read during the static render.
     const saved = readStored();
     const browser = navigator.language.slice(0, 2);
     const next: Lang = isLang(saved) ? saved : browser === 'es' || browser === 'en' ? browser : 'pt';
@@ -38,10 +36,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
 export const useLang = () => useContext(LangContext);
 
-/** Prefix for files in /public, so they also work under a GitHub Pages base path. */
 export const asset = (path: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${path}`;
 
-/** Adds `is-visible` to `[data-reveal]` elements as they scroll into view. */
 export function useReveal(deps: unknown[] = []) {
   useEffect(() => {
     const items = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]:not(.is-visible)'));

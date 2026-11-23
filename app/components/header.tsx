@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { sectionIds, site } from '../content/site';
 import { asset, languages, useLang } from '../i18n';
 
-/** Sticky header. On the home page links are in-page anchors; elsewhere they lead back home. */
 export default function Header({ home = false }: { home?: boolean }) {
   const { lang, setLang } = useLang();
   const t = site[lang];
@@ -12,7 +11,6 @@ export default function Header({ home = false }: { home?: boolean }) {
   const [open, setOpen] = useState(false);
   const href = (id: string) => (home ? `#${id}` : asset(`/#${id}`));
 
-  // Highlight the menu item of the section on screen (home page only).
   useEffect(() => {
     if (!home || !('IntersectionObserver' in window)) return;
     const observer = new IntersectionObserver(entries => {

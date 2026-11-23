@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@500;600;700;800&display=swap');
 
-/* ---------- Tokens: light editorial, black and orange, a quiet grid ---------- */
+/* ---------- Tokens ---------- */
 :root{
   --paper:#fbfaf8;--ink:#0f0f0f;--muted:#5f5a63;--soft:#f3f0ef;
   --brand:#f2570a;--brand-ink:#c2410c;--brand-soft:#fde5d6;--rose:#a24d4a;
@@ -100,7 +100,6 @@ h1{font:800 clamp(64px,8.2vw,132px)/.86 var(--display);letter-spacing:-.075em;ma
 .section-head{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(40px,5vw,72px)}
 .section-head h2,.statement,.contact h2{margin:0;font:800 clamp(34px,4.2vw,62px)/1.04 var(--display);letter-spacing:-.055em}
 .section-head p{margin:0;max-width:44ch;font-size:17px;line-height:1.7;color:var(--muted)}
-.footnote{margin:28px 0 0;font:500 11px var(--mono);letter-spacing:.08em;color:var(--muted)}
 
 /* About */
 .split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(40px,7vw,112px);align-items:start}

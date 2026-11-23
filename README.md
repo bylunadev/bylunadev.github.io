@@ -1,4 +1,4 @@
-# Luana Menezes — Portfólio
+# Luana Menezes · Portfólio
 
 Portfólio pessoal em português (Brasil), espanhol (Argentina) e inglês.
 

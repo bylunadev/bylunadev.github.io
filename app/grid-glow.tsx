@@ -2,17 +2,11 @@
 
 import { useEffect, useRef } from 'react';
 
-// Cell size must match the 40px CSS grid drawn by `.grid` in globals.css.
 const CELL = 40;
 const MAX_ALPHA = 0.16;
 const FADE_PER_FRAME = 0.018;
-const COLOR = '242, 87, 10'; // --brand
+const COLOR = '242, 87, 10';
 
-/**
- * Soft orange trail on the background grid: the square under the pointer lights up
- * (its neighbours a little less) and fades out slowly. Off for touch input and
- * for people who prefer reduced motion.
- */
 export default function GridGlow() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
