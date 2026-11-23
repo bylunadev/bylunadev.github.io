@@ -56,7 +56,7 @@ export const site: Record<Lang, SiteCopy> = {
       title: 'A Medicina me ensinou a investigar antes de intervir. A engenharia me deu os meios para construir.',
       body: [
         'Estudo Medicina na Fundación H. A. Barceló, em Buenos Aires, e engenharia de software de forma autodidata. As duas áreas pedem o mesmo rigor: observar com cuidado, levantar hipóteses, decidir com critério e acompanhar o resultado.',
-        'O MEDLAB nasceu assim. Eu conhecia por dentro a dificuldade de se preparar para um exame oral e construí a ferramenta que faltava. Na REPLAB, aplico o mesmo método aos negócios: entender a operação antes de propor tecnologia.',
+        'O MEDLAB nasceu assim. Eu conhecia por dentro a dificuldade de se preparar para um exame oral e construí a ferramenta que faltava.',
         'Trabalho de ponta a ponta, do produto e da arquitetura ao código, ao conteúdo e à publicação. Uso IA onde ela resolve um problema concreto, com limites claros e verificação no servidor.',
       ],
       note: 'Na Medicina, meus interesses são neurocirurgia e geriatria, em especial a qualidade de vida das pessoas idosas.',
@@ -89,7 +89,7 @@ export const site: Record<Lang, SiteCopy> = {
     },
     work: {
       label: 'PROJETOS SELECIONADOS',
-      title: 'Três produtos no ar, cada um com seu estudo de caso.',
+      title: 'Dois projetos no ar, cada um com seu estudo de caso.',
       intro: 'Problema, decisões, arquitetura e o estado real de cada projeto.',
       read: 'Ler estudo de caso',
       visit: 'Abrir site',
@@ -105,7 +105,6 @@ export const site: Record<Lang, SiteCopy> = {
       ],
       practiceEntries: [
         { tag: 'PRODUTO · IA', title: 'MEDLAB', org: 'Criadora e fundadora', period: '2026 – hoje', status: 'no ar', text: 'Concepção, design, desenvolvimento, conteúdo e operação da plataforma de treino para exames orais.' },
-        { tag: 'IA · AUTOMAÇÃO', title: 'REPLAB', org: 'Criadora e fundadora', period: '2026 – hoje', status: 'no ar', text: 'Assistente de WhatsApp com agenda, sistema de conteúdo para Instagram e diagnóstico online para negócios.' },
         { tag: 'WEB', title: 'Clínica Catarina Catunda', org: 'Projeto web', period: '2026', status: 'no ar', text: 'Concepção, design e desenvolvimento do site institucional da fisioterapeuta.' },
       ],
     },
@@ -138,7 +137,7 @@ export const site: Record<Lang, SiteCopy> = {
       title: 'La Medicina me enseñó a investigar antes de intervenir. La ingeniería me dio los medios para construir.',
       body: [
         'Estudio Medicina en la Fundación H. A. Barceló, en Buenos Aires, e ingeniería de software de forma autodidacta. Las dos áreas piden el mismo rigor: observar con atención, plantear hipótesis, decidir con criterio y seguir el resultado.',
-        'Así nació MEDLAB. Conocía desde adentro lo difícil que es prepararse para un examen oral y construí la herramienta que faltaba. En REPLAB aplico el mismo método a los negocios: entender la operación antes de proponer tecnología.',
+        'Así nació MEDLAB. Conocía desde adentro lo difícil que es prepararse para un examen oral y construí la herramienta que faltaba.',
         'Trabajo de punta a punta, del producto y la arquitectura al código, el contenido y la publicación. Uso IA donde resuelve un problema concreto, con límites claros y verificación en el servidor.',
       ],
       note: 'En Medicina me interesan la neurocirugía y la geriatría, en especial la calidad de vida de las personas mayores.',
@@ -171,7 +170,7 @@ export const site: Record<Lang, SiteCopy> = {
     },
     work: {
       label: 'PROYECTOS SELECCIONADOS',
-      title: 'Tres productos en línea, cada uno con su caso de estudio.',
+      title: 'Dos proyectos en línea, cada uno con su caso de estudio.',
       intro: 'Problema, decisiones, arquitectura y el estado real de cada proyecto.',
       read: 'Leer caso de estudio',
       visit: 'Abrir sitio',
@@ -187,7 +186,6 @@ export const site: Record<Lang, SiteCopy> = {
       ],
       practiceEntries: [
         { tag: 'PRODUCTO · IA', title: 'MEDLAB', org: 'Creadora y fundadora', period: '2026 – hoy', status: 'en línea', text: 'Concepción, diseño, desarrollo, contenido y operación de la plataforma de entrenamiento para exámenes orales.' },
-        { tag: 'IA · AUTOMATIZACIÓN', title: 'REPLAB', org: 'Creadora y fundadora', period: '2026 – hoy', status: 'en línea', text: 'Asistente de WhatsApp con agenda, sistema de contenido para Instagram y diagnóstico en línea para negocios.' },
         { tag: 'WEB', title: 'Clínica Catarina Catunda', org: 'Proyecto web', period: '2026', status: 'en línea', text: 'Concepción, diseño y desarrollo del sitio institucional de la fisioterapeuta.' },
       ],
     },
@@ -220,7 +218,7 @@ export const site: Record<Lang, SiteCopy> = {
       title: 'Medicine taught me to investigate before intervening. Engineering gave me the means to build.',
       body: [
         'I study medicine at Fundación H. A. Barceló in Buenos Aires, and I am a self-taught software engineering student. Both fields demand the same rigour: observe carefully, form hypotheses, decide with judgement and follow the outcome.',
-        'That is how MEDLAB started. I knew first-hand how hard it is to prepare for an oral exam, so I built the tool that was missing. At REPLAB I apply the same method to businesses: understand the operation before proposing technology.',
+        'That is how MEDLAB started. I knew first-hand how hard it is to prepare for an oral exam, so I built the tool that was missing.',
         'I work end to end, from product and architecture to code, content and release. I use AI where it solves a concrete problem, with clear limits and server-side checks.',
       ],
       note: 'In medicine, I am most drawn to neurosurgery and geriatrics, especially the quality of life of older people.',
@@ -253,7 +251,7 @@ export const site: Record<Lang, SiteCopy> = {
     },
     work: {
       label: 'SELECTED WORK',
-      title: 'Three products live, each with its case study.',
+      title: 'Two projects live, each with its case study.',
       intro: 'Problem, decisions, architecture and the real state of each project.',
       read: 'Read case study',
       visit: 'Open site',
@@ -269,7 +267,6 @@ export const site: Record<Lang, SiteCopy> = {
       ],
       practiceEntries: [
         { tag: 'PRODUCT · AI', title: 'MEDLAB', org: 'Creator & founder', period: '2026 – present', status: 'live', text: 'Concept, design, development, content and operations of the oral-exam training platform.' },
-        { tag: 'AI · AUTOMATION', title: 'REPLAB', org: 'Creator & founder', period: '2026 – present', status: 'live', text: 'WhatsApp assistant with scheduling, an Instagram content system and an online diagnostic for businesses.' },
         { tag: 'WEB', title: 'Catarina Catunda Clinic', org: 'Web project', period: '2026', status: 'live', text: 'Concept, design and development of the physiotherapist’s website.' },
       ],
     },

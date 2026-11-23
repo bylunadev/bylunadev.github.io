@@ -26,7 +26,7 @@ test('the home page has the eight planned sections', () => {
 
 test('every project has a case study with ten sections and existing images', async () => {
   const slugs = [...projects.matchAll(/slug: '([^']+)'/g)].map(m => m[1]);
-  assert.deepEqual(slugs, ['medlab', 'replab', 'clinica-catarina-catunda']);
+  assert.deepEqual(slugs, ['medlab', 'clinica-catarina-catunda']);
   const sources = [...projects.matchAll(/src: '([^']+)'/g)].map(m => m[1]);
   for (const src of sources) await stat(new URL(`../public${src}`, import.meta.url));
   const { projects: list } = await import('../app/content/projects.ts').catch(() => ({ projects: null }));
