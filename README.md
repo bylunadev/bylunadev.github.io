@@ -16,4 +16,4 @@ npm run deploy
 ```
 
 Gera o site e envia para a branch `gh-pages`, que o GitHub Pages publica em
-https://luanacbmenezes-lab.github.io
+https://bylunadev.github.io

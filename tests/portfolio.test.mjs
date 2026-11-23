@@ -16,7 +16,7 @@ test('site copy exists in all three languages', () => {
 test('contact details are the supplied ones', () => {
   assert.ok(site.includes("email: 'luanamenezes10@icloud.com'"));
   assert.ok(site.includes("whatsapp: 'https://wa.me/5491173692773'"));
-  assert.ok(site.includes("github: 'https://github.com/luanacbmenezes-lab'"));
+  assert.ok(site.includes("github: 'https://github.com/bylunadev'"));
 });
 
 test('the home page has the eight planned sections', () => {

@@ -9,7 +9,7 @@ EMAIL="$(git config user.email)"
 
 npm test
 rm -rf out
-SITE_URL="https://luanacbmenezes-lab.github.io" npm run build
+SITE_URL="https://bylunadev.github.io" npm run build
 touch out/.nojekyll   # deixa o GitHub servir a pasta _next/
 
 cd out
@@ -17,4 +17,4 @@ git init -q -b gh-pages
 git add -A
 git -c user.name="$NAME" -c user.email="$EMAIL" commit -q -m "Publicar site ($(git -C .. rev-parse --short HEAD))"
 git push -q -f "$REMOTE" gh-pages
-echo "Publicado: https://luanacbmenezes-lab.github.io"
+echo "Publicado: https://bylunadev.github.io"

@@ -3,7 +3,7 @@ import type { Lang } from '../i18n';
 export const links = {
   email: 'luanamenezes10@icloud.com',
   whatsapp: 'https://wa.me/5491173692773',
-  github: 'https://github.com/luanacbmenezes-lab',
+  github: 'https://github.com/bylunadev',
   linkedin: 'https://www.linkedin.com/in/luana-catunda-bezerra-de-menezes-aa0165447/',
 };
 
