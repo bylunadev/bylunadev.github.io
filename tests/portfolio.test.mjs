@@ -45,3 +45,12 @@ test('the transparent portrait cutout is used in the site', () => {
   assert.equal(portrait.subarray(8, 12).toString('ascii'), 'WEBP');
   assert.ok(portrait.includes(Buffer.from('ALPH')), 'WebP keeps the transparent background');
 });
+
+test('the free guide page links to both PDFs, which exist', async () => {
+  const guide = await read('app/guia/guide.tsx');
+  for (const file of ['seu-1o-site-no-ar.pdf', 'tu-1er-sitio-online.pdf']) {
+    assert.ok(guide.includes(`/guia/${file}`), file);
+    const pdf = await readFile(new URL(`../public/guia/${file}`, import.meta.url));
+    assert.equal(pdf.subarray(0, 4).toString('ascii'), '%PDF', file);
+  }
+});
