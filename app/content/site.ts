@@ -55,7 +55,7 @@ export const site: Record<Lang, SiteCopy> = {
       label: 'SOBRE',
       title: 'A Medicina me ensinou a investigar antes de intervir. A engenharia me deu os meios para construir.',
       body: [
-        'Estudo Medicina na Fundación H. A. Barceló, em Buenos Aires, e engenharia de software de forma autodidata. As duas áreas pedem o mesmo rigor: observar com cuidado, levantar hipóteses, decidir com critério e acompanhar o resultado.',
+        'Estudo Medicina na Fundación H. A. Barceló e Engenharia de Software na Universidad de Palermo, em Buenos Aires. As duas áreas pedem o mesmo rigor: observar com cuidado, levantar hipóteses, decidir com critério e acompanhar o resultado.',
         'O MEDLAB nasceu assim. Eu conhecia por dentro a dificuldade de se preparar para um exame oral e construí a ferramenta que faltava.',
         'Trabalho de ponta a ponta, do produto e da arquitetura ao código, ao conteúdo e à publicação. Uso IA onde ela resolve um problema concreto, com limites claros e verificação no servidor.',
       ],
@@ -101,7 +101,7 @@ export const site: Record<Lang, SiteCopy> = {
       practice: 'Experiência prática',
       entries: [
         { tag: 'MEDICINA', title: 'Medicina', org: 'Fundación H. A. Barceló · Buenos Aires', period: 'Em andamento', status: 'em andamento', text: 'Curso de Medicina, com interesse em neurocirurgia e geriatria.' },
-        { tag: 'ENGENHARIA DE SOFTWARE', title: 'Engenharia de Software', org: 'Autodidata · CS50 de Harvard (edX), The Odin Project e projetos próprios', period: 'Em andamento', status: 'em andamento', text: 'Formação autodidata em engenharia de software, seguindo a trilha de cursos CS50 de Harvard, online pelo edX, e o currículo do The Odin Project, aplicada na construção dos meus próprios produtos.' },
+        { tag: 'ENGENHARIA DE SOFTWARE', title: 'Engenharia de Software', org: 'Universidad de Palermo · Buenos Aires', period: 'Em andamento', status: 'em andamento', text: 'Curso de Engenharia de Software, aplicado na construção dos meus próprios produtos.' },
       ],
       practiceEntries: [
         { tag: 'PRODUTO · IA', title: 'MEDLAB', org: 'Criadora e fundadora', period: '2026 – hoje', status: 'no ar', text: 'Concepção, design, desenvolvimento, conteúdo e operação da plataforma de treino para exames orais.' },
@@ -136,7 +136,7 @@ export const site: Record<Lang, SiteCopy> = {
       label: 'SOBRE MÍ',
       title: 'La Medicina me enseñó a investigar antes de intervenir. La ingeniería me dio los medios para construir.',
       body: [
-        'Estudio Medicina en la Fundación H. A. Barceló, en Buenos Aires, e ingeniería de software de forma autodidacta. Las dos áreas piden el mismo rigor: observar con atención, plantear hipótesis, decidir con criterio y seguir el resultado.',
+        'Estudio Medicina en la Fundación H. A. Barceló e Ingeniería de Software en la Universidad de Palermo, en Buenos Aires. Las dos áreas piden el mismo rigor: observar con atención, plantear hipótesis, decidir con criterio y seguir el resultado.',
         'Así nació MEDLAB. Conocía desde adentro lo difícil que es prepararse para un examen oral y construí la herramienta que faltaba.',
         'Trabajo de punta a punta, del producto y la arquitectura al código, el contenido y la publicación. Uso IA donde resuelve un problema concreto, con límites claros y verificación en el servidor.',
       ],
@@ -182,7 +182,7 @@ export const site: Record<Lang, SiteCopy> = {
       practice: 'Experiencia práctica',
       entries: [
         { tag: 'MEDICINA', title: 'Medicina', org: 'Fundación H. A. Barceló · Buenos Aires', period: 'En curso', status: 'en curso', text: 'Carrera de Medicina, con interés en neurocirugía y geriatría.' },
-        { tag: 'INGENIERÍA DE SOFTWARE', title: 'Ingeniería de Software', org: 'Autodidacta · CS50 de Harvard (edX), The Odin Project y proyectos propios', period: 'En curso', status: 'en curso', text: 'Formación autodidacta en ingeniería de software, siguiendo la serie de cursos CS50 de Harvard, en línea por edX, y el currículo de The Odin Project, aplicada en la construcción de mis propios productos.' },
+        { tag: 'INGENIERÍA DE SOFTWARE', title: 'Ingeniería de Software', org: 'Universidad de Palermo · Buenos Aires', period: 'En curso', status: 'en curso', text: 'Carrera de Ingeniería de Software, aplicada en la construcción de mis propios productos.' },
       ],
       practiceEntries: [
         { tag: 'PRODUCTO · IA', title: 'MEDLAB', org: 'Creadora y fundadora', period: '2026 – hoy', status: 'en línea', text: 'Concepción, diseño, desarrollo, contenido y operación de la plataforma de entrenamiento para exámenes orales.' },
@@ -217,7 +217,7 @@ export const site: Record<Lang, SiteCopy> = {
       label: 'ABOUT',
       title: 'Medicine taught me to investigate before intervening. Engineering gave me the means to build.',
       body: [
-        'I study medicine at Fundación H. A. Barceló in Buenos Aires, and I am a self-taught software engineering student. Both fields demand the same rigour: observe carefully, form hypotheses, decide with judgement and follow the outcome.',
+        'I study medicine at Fundación H. A. Barceló and software engineering at Universidad de Palermo, both in Buenos Aires. Both fields demand the same rigour: observe carefully, form hypotheses, decide with judgement and follow the outcome.',
         'That is how MEDLAB started. I knew first-hand how hard it is to prepare for an oral exam, so I built the tool that was missing.',
         'I work end to end, from product and architecture to code, content and release. I use AI where it solves a concrete problem, with clear limits and server-side checks.',
       ],
@@ -263,7 +263,7 @@ export const site: Record<Lang, SiteCopy> = {
       practice: 'Hands-on experience',
       entries: [
         { tag: 'MEDICINE', title: 'Medicine', org: 'Fundación H. A. Barceló · Buenos Aires', period: 'In progress', status: 'in progress', text: 'Medical degree, with an interest in neurosurgery and geriatrics.' },
-        { tag: 'SOFTWARE ENGINEERING', title: 'Software Engineering', org: 'Self-taught · Harvard CS50 (edX), The Odin Project and my own projects', period: 'In progress', status: 'in progress', text: 'Self-taught software engineering, following Harvard’s CS50 course series online via edX and The Odin Project curriculum, applied to building my own products.' },
+        { tag: 'SOFTWARE ENGINEERING', title: 'Software Engineering', org: 'Universidad de Palermo · Buenos Aires', period: 'In progress', status: 'in progress', text: 'Software engineering degree, applied to building my own products.' },
       ],
       practiceEntries: [
         { tag: 'PRODUCT · AI', title: 'MEDLAB', org: 'Creator & founder', period: '2026 – present', status: 'live', text: 'Concept, design, development, content and operations of the oral-exam training platform.' },

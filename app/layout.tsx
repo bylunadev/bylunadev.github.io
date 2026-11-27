@@ -36,7 +36,10 @@ const person = {
   address: { '@type': 'PostalAddress', addressLocality: 'Buenos Aires', addressCountry: 'AR' },
   email: `mailto:${links.email}`,
   sameAs: [links.github, links.linkedin, 'https://medlab.com.ar'].filter(Boolean),
-  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Fundación H. A. Barceló' },
+  alumniOf: [
+    { '@type': 'CollegeOrUniversity', name: 'Fundación H. A. Barceló' },
+    { '@type': 'CollegeOrUniversity', name: 'Universidad de Palermo' },
+  ],
   knowsAbout: ['Product development', 'Software engineering', 'Artificial intelligence', 'Automation', 'Medicine'],
 };
 
